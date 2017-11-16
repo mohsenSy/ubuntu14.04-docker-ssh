@@ -1,10 +1,9 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-MAINTAINER Mouhsen Ibrahim
-
 # Install openssh server
 FROM ubuntu:14.04
+MAINTAINER Mouhsen Ibrahim <imohsen9@gmail.com>
 RUN apt-get update && apt-get install -y openssh-server && mkdir -p /var/run/sshd
 
 # Create a user called mohsen
